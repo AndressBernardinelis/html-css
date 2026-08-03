@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+    <style>
+       body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+
+       table {
+        width: 50px;
+        border-collapse: collapse;
+       }
+
+       caption {
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+       }
+
+       th, td {
+        border: 1px solid blueviolet;
+        padding: 8px;
+       }
+
+       col.cnome {
+        background-color: antiquewhite;
+       } 
+
+       .verde {
+        background-color: green;
+       }
+
+       .azul {
+        background-color: blue;
+       }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+             <col class="verde">
+             <col class="azul" span="2">
+             <col class="verde">
+                 
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>   
+        <tr>
+            <td >Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornaista</td>
+        </tr>
+        <tr>
+            <td >Cleber</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td >Joana</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+   
+
+</body>
+</html>
